@@ -22,6 +22,16 @@ public class BootToJpaApplication {
 		//Creating manual beans
 		var upstox = context.getBean(Upstox.class);
 
+		//Bean Scopes
+		//Initially scope of a bean is singleton.
+		var app1 = context.getBean(RentalSystem.class);
+		var app2 = context.getBean(RentalSystem.class);
+//		System.out.println("request1: "+app1.hashCode());
+//		System.out.println("request2: "+app2.hashCode());
+
+		//PostConstruct and preDestroy
+		System.out.println("request1: "+app1.hashCode());
+
 
 
 
