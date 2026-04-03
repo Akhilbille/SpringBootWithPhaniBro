@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: BootToJPA
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/store
+    username: root
+    password: root
