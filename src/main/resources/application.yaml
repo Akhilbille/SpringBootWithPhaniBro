@@ -6,3 +6,11 @@ spring:
     url: jdbc:mysql://localhost:3306/store
     username: root
     password: root
+
+#Upstox API key
+upstox:
+#  apiUrl: https://upstox.com/api
+  key: 540454611241515646
+  password: asdfg%&^11
+
+

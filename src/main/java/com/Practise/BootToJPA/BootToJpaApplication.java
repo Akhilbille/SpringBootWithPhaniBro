@@ -13,7 +13,11 @@ public class BootToJpaApplication {
 
 		//Spring Boot - IOC and DI
 		RentalSystem app = context.getBean(RentalSystem.class);
-		app.bookVehicle(2);
+//		app.bookVehicle(2);
+
+		//Externalizing configuration
+		app.checkApiDetails();
+
 
 
 	}
