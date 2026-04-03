@@ -1,6 +1,7 @@
 package com.Practise.BootToJPA;
 
 import com.Practise.BootToJPA.Services.RentalSystem;
+import com.Practise.BootToJPA.Services.Upstox;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -17,6 +18,11 @@ public class BootToJpaApplication {
 
 		//Externalizing configuration
 		app.checkApiDetails();
+
+		//Creating manual beans
+		var upstox = context.getBean(Upstox.class);
+
+
 
 
 
