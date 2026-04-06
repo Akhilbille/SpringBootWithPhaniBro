@@ -3,6 +3,9 @@ package com.Practise.BootToJPA.entities;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Setter
@@ -28,6 +31,15 @@ public class User {
 
     @Column(name = "phone_number")
     private String phoneNumber;
+
+    @OneToMany(mappedBy = "user")
+   private List<Address> addresses=new ArrayList<>();
+
+
+    public void addAddress(Address address){
+        addresses.add(address);
+        address.setUser(this);
+    }
 
 
 }
