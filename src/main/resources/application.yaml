@@ -3,11 +3,11 @@ spring:
     name: BootToJPA
 
   datasource:
-    url: jdbc:mysql://localhost:3306/store
+    url: jdbc:mysql://localhost:3306/shop
     username: root
     password: root
 
-#Upstox API key
+#Upstox API key: External
 upstox:
 #  apiUrl: https://upstox.com/api
   key: 540454611241515646
